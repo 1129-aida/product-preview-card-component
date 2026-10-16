@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-Medium.woff2) format(woff2);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat-Bold.woff2) format(woff2);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Fraunces";
+    src: url(./fonts/Fraunces_72pt-Bold.woff2) format(woff2);
+    font-weight: 700;
+}
+
+:root {
+    --accent-color:  hsl(158, 36%, 37%);
+    --hover-color:  hsl(158, 42%, 18%);
+    --header-color:  hsl(212, 21%, 14%);
+    --text-color:  hsl(228, 12%, 48%);
+    --background-color: hsl(30, 38%, 92%);
+    --card-background-color:  hsl(0, 0%, 100%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+main{
+    background-color: var(--card-background-color);
+    border-radius: 8px;
+    padding: 2.5em;
+    display: grid;
+}
+
+h1 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: var(--header-color);
+    font-size: 2em;
+    line-height: 1;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+}
+
+.new {
+     font-family: "Fraunces",serif;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 2em;
+}
+
+.old {
+    align-self: center;
+    justify-self: self-start;
+}
+
+button {
+    background-color: var(--accent-color);
+    border: 0;
+    padding: 1em;
+    border-radius: 8px;
+    align-self: stretch;
+    font-weight: 700;
+    color: var(--card-background-color);
+}
