@@ -96,6 +96,11 @@ button {
     gap: 8px;
 }
 
+button:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
 @media (min-width: 600px) {
     .card{
         grid-template-columns: 310px 310px;
